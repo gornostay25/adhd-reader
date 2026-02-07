@@ -50,6 +50,9 @@
 			<kbd class="rounded border border-(--color-border) px-1.5 py-0.5 font-mono text-[10px]">R</kbd
 			>
 			{m.r_reset()}
+			&nbsp;&middot;&nbsp;
+			<kbd class="rounded border border-(--color-border) px-1.5 py-0.5 font-mono text-[10px]">F</kbd>
+			{m.enter_fullscreen()}
 		</p>
 	</footer>
 </div>

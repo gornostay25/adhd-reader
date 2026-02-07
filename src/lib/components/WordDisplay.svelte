@@ -26,15 +26,32 @@
 		}
 	}
 
+	function handleKeydown(e: KeyboardEvent) {
+		if (e.code === 'KeyF') {
+			e.preventDefault();
+			toggleFullscreen();
+		}
+	}
+
 	onMount(() => {
+		const ac = new AbortController();
+
 		function onFullscreenChange() {
 			if (ontogglefullscreen) {
 				ontogglefullscreen();
 			}
 		}
 
-		document.addEventListener('fullscreenchange', onFullscreenChange);
-		return () => document.removeEventListener('fullscreenchange', onFullscreenChange);
+		document.addEventListener('fullscreenchange', onFullscreenChange, {
+			signal: ac.signal
+		});
+		document.addEventListener('keydown', handleKeydown, {
+			signal: ac.signal
+		});
+
+		return () => {
+			ac.abort();
+		};
 	});
 
 	export function requestFullscreen() {

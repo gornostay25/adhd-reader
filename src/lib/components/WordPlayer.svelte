@@ -142,10 +142,13 @@
 	}
 
 	onMount(() => {
-		document.addEventListener('keydown', handleKeydown);
+		const ac = new AbortController();
+		document.addEventListener('keydown', handleKeydown, {
+			signal: ac.signal
+		});
 		return () => {
 			stopTimer();
-			document.removeEventListener('keydown', handleKeydown);
+			ac.abort();
 		};
 	});
 </script>
