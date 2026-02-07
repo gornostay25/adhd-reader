@@ -1,6 +1,5 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"app_title": "ADHD Reader",
 	"app_tagline": "Paste text. Press play. Focus.",
 	"paste_text": "Paste your text",
 	"placeholder": "Paste or type your text here...",

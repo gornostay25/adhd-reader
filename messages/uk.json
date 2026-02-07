@@ -1,6 +1,5 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"app_title": "ADHD Reader",
 	"app_tagline": "Вставте текст. Натисніть play. Зосередьтесь.",
 	"paste_text": "Вставте ваш текст",
 	"placeholder": "Вставте або введіть ваш текст тут...",

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <!-- Full bleed background for maskable safe zone -->
+  <rect width="512" height="512" fill="#6366f1"/>
+  <!-- Content scaled and centered within safe zone (80% = 409px, offset 51px) -->
+  <g transform="translate(51, 51) scale(3.2)">
+    <rect x="24" y="40" width="36" height="8" rx="4" fill="white" opacity="0.4"/>
+    <rect x="24" y="56" width="80" height="10" rx="5" fill="white"/>
+    <rect x="24" y="74" width="56" height="8" rx="4" fill="white" opacity="0.4"/>
+    <rect x="24" y="90" width="44" height="8" rx="4" fill="white" opacity="0.2"/>
+  </g>
+</svg>

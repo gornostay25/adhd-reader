@@ -1,0 +1,32 @@
+{
+	"name": "ADHD Reader",
+	"short_name": "ADHD Reader",
+	"description": "A focused reading tool that displays text one word at a time at adjustable speed.",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"background_color": "#0a0a0b",
+	"theme_color": "#6366f1",
+	"orientation": "any",
+	"categories": ["utilities", "education", "productivity"],
+	"icons": [
+		{
+			"src": "/icon-192.svg",
+			"sizes": "192x192",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		},
+		{
+			"src": "/icon-512.svg",
+			"sizes": "512x512",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		},
+		{
+			"src": "/icon-maskable.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "maskable"
+		}
+	]
+}
